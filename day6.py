@@ -22,6 +22,5 @@ def day6():
         if key != -1:
             total += sizes[key]
     print(total)
-    #350917
 
 day6()
