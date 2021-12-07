@@ -17,10 +17,7 @@ def day6():
             sizes[key-1] = sizes[key]
         sizes[6] += sizes[-1]
         sizes[8] = sizes[-1]
-    total = 0
-    for key in range(9):
-        if key != -1:
-            total += sizes[key]
-    print(total)
+    sizes[-1] = 0
+    print(sum(list(sizes.values())))
 
 day6()
